@@ -1,4 +1,6 @@
-#This project is still in progess
+#This project is still in progress
+
+Estimated Completion Date: early August
 
 Here's the plan. We create a way to automate doing the sticky keys windows hack from a bootable USB.
 
@@ -14,4 +16,5 @@ we should add a mimikittenz option if the computer was found running and unlocke
 Google Chrome saves it's password in an annoying sqlite databse in ``` "Appdata\Local\Google\Chrome\User Data\Default\Login Data" ```
 They're encrypted with the Windows CryptProtectData function.
 https://github.com/chromium/chromium/blob/trunk/chrome/browser/password_manager/encryptor_win.cc
+
 Edit: chrome python script now creates a csv with passwords
