@@ -10,3 +10,7 @@ how to mount windows from a linux bootable USB
 8) restart and boot to Windows
 9) hit Shift 5 times fast
 10) cd to the USB and run WinPirate.bat
+
+For reference if needed:
+net user /add LILBOBBY Password1
+net localgroup administrators LILBOBBY /add
