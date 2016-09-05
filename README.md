@@ -15,7 +15,7 @@ we should add a mimikittenz option if the computer was found running and unlocke
 Requirements: a linux bootable USB, this repo on the USB (not in the OS, just put it in the root directory)  
 1) shutdown windows  (make sure not hibernating by holding shift while pressing shut down)  
 2) hit F12 and select USB  
-3) ```sudo -i``` 
+3) ```sudo -i```   
 4) ```fdisk -l```  (note: if you're on Kali Linux, run ```parted -l```)  
 5) ```mkdir /media/windows```  
 6) ```mount /dev/WHATEVERTHEWINDOWSPARTITIONWASCALLED /media/windows -t ntfs```  
