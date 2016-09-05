@@ -20,7 +20,7 @@ If the computer is locked:
 4) ```fdisk -l```  (note: if you're on Kali Linux, run ```parted -l```)  
 5) ```mkdir /media/windows```  
 6) ```mount /dev/WHATEVERTHEWINDOWSPARTITIONWASCALLED /media/windows -t ntfs```  
-7) run sticky keys.sh  
+7) run Stickykeys.sh  
 8) restart and boot to Windows  
 9) hit Shift 5 times fast, a command prompt will appear  
 10) cd to the USB and run WinPirate.bat  
