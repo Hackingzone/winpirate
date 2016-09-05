@@ -25,7 +25,7 @@ Requirements: a linux bootable USB, this repo on the USB (not in the OS, just pu
 10) cd to the USB and run WinPirate.bat
 
 #Current Issues
-1) The chrome passwords grabber that I made is still a .py    For it to work, I need to convert it to exe so it doesn't require python to be installed on the system
+1) The chrome passwords grabber that I made is still a .py    For it to work, I need to convert it to exe so it doesn't require python to be installed on the system.  
 You can run it with '''python chromepasswords.py -csv''' and it will decrypt the Chrome saved passwords database and export it as a CSV
 
 2) The sticky keys automation doesn't speed the process up as much as I previously thought, as evident by the lengthy "How to Use" section
