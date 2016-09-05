@@ -13,6 +13,7 @@ we should add a mimikittenz option if the computer was found running and unlocke
 
 #How to Use
 Requirements: a linux bootable USB, this repo on the USB (not in the OS, just put it in the root directory)  
+If the computer is locked:   
 1) shutdown windows  (make sure not hibernating by holding shift while pressing shut down)  
 2) hit F12 and select USB  
 3) ```sudo -i```   
@@ -22,7 +23,10 @@ Requirements: a linux bootable USB, this repo on the USB (not in the OS, just pu
 7) run sticky keys.sh  
 8) restart and boot to Windows  
 9) hit Shift 5 times fast, a command prompt will appear  
-10) cd to the USB and run WinPirate.bat
+10) cd to the USB and run WinPirate.bat  
+
+If the computer isn't locked:  
+cd to the USB and run Run.bat (this will run WinPirate.bat silently in the background, it should be done in < 10 seconds  
 
 #Current Issues
 1) The chrome passwords grabber that I made is still a .py    For it to work, I need to convert it to exe so it doesn't require python to be installed on the system.  
