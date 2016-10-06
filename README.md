@@ -14,7 +14,7 @@ we should add a mimikittenz option if the computer was found running and unlocke
 #How to Use
 Requirements: a linux bootable USB, this repo on the USB (not in the OS, just put it in the root directory)
 
-**chromepasswords.py requires PyWin32***
+**chromepasswords.py requires PyWin32**
 
 If the computer is locked:   
 1) shutdown windows  (make sure not hibernating by holding shift while pressing shut down)  
